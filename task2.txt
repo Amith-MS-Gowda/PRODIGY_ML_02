@@ -1,0 +1,17 @@
+Description
+This Python script performs customer segmentation using the K-means clustering algorithm on a retail dataset (presumably containing customer information from a mall). It processes the data, scales features, and determines the optimal number of clusters using both the Elbow Method and the Silhouette Score. Finally, it visualizes the clusters and saves the segmented customer data.
+
+Key Features
+Data Loading: Loads customer data from a CSV file and inspects the first few rows.
+Data Preprocessing: Checks for missing values and encodes the 'Gender' column into numerical format.
+Feature Selection: Selects relevant features for clustering, excluding 'Gender' for simplicity.
+Feature Scaling: Applies standard scaling to the features to improve clustering performance.
+Optimal Clustering Determination:
+Uses the Elbow Method to find the optimal number of clusters by plotting the within-cluster sum of squares (WCSS).
+Calculates the Silhouette Score to evaluate the quality of clusters for different numbers of clusters.
+K-means Clustering: Applies K-means with the chosen number of clusters and assigns cluster labels to the dataset.
+Visualizations: Plots scatter plots to visualize customer segments based on various feature combinations.
+Cluster Analysis: Computes and displays the mean values of each feature within each cluster, along with the number of customers in each cluster.
+Data Saving: Saves the clustered data to a new CSV file for further analysis.
+Use Cases
+This script is beneficial for retail businesses to understand customer behavior and preferences, enabling targeted marketing strategies and personalized offers based on distinct customer segments.
